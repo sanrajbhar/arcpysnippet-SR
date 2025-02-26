@@ -14,8 +14,8 @@ Modify add_fc_name.py like this:
 gdb_path = r"C:\Users\sri00571\OneDrive - ARCADIS\Documents\ArcGIS\Projects\MyProject7\test\working.gdb"
 
 # Create an instance of the FeatureClassProcessor
-fc_processor = FeatureClassProcessor(gdb_path)
+fc_processor = FeatureClassProcessor(gdb_path) #class name to initilisation
 
 # Process all feature classes in the geodatabase
-fc_processor.process_all_feature_classes()
+fc_processor.process_all_feature_classes() #function within class to run task
 #
