@@ -3,9 +3,6 @@
 please check Util folder that contain classes and function to re-use the code in your main script file. I upload list of functions.
 ## SR_ArcpyDefinedFunc.py - GIS Helper Functions using ArcPy
 
-
-
-## Overview
 This script provides utility functions for working with Geographic Information System (GIS) data using ArcPy. It allows users to list and process feature classes (FCs) in a workspace (folder or geodatabase), extract metadata, and update feature class attributes.
 
 ## Prerequisites
