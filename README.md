@@ -1,4 +1,4 @@
-# arcpysnippet-testing
+# arcpysnippet-SR
 this is just practice to learn GIT and Github
 
 ## shapefile viewer
