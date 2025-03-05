@@ -15,18 +15,23 @@ Ensure that ArcGIS Pro or ArcMap is installed with ArcPy available. The script c
 
 ## Functions
 
+Add this at start of your script
+
+`import arcpy`
+`from Utils.SR_ArcpyDefinedFunc import *`
+
 ### 1. `list_fcs_in_folder(workspace)`
 **Description:** Recursively lists all shapefiles and feature classes in a folder and its subdirectories.
 - **Parameters:** `workspace` (str) - The root folder path containing GIS data.
 - **Returns:** List of full paths to all feature classes found.
-- `import arcpy
-from Utils.SR_ArcpyDefinedFunc import *
+- `import arcpy`
+`from Utils.SR_ArcpyDefinedFunc import *`
 
 # Example Usage
-workspace = "C:/GIS/Data"
+`workspace = "C:/GIS/Data"`
 
 # List feature classes
-print(list_fcs_in_folder(workspace))`
+`print(list_fcs_in_folder(workspace))`
 
 ### 2. `list_fcs_in_gdb(gdb_path)`
 **Description:** Lists all feature classes in a Geodatabase (GDB), including those inside feature datasets.
