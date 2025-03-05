@@ -27,10 +27,10 @@ Add this at start of your script
 - `import arcpy`
 `from Utils.SR_ArcpyDefinedFunc import *`
 
-# Example Usage
+**Example Usage**
 `workspace = "C:/GIS/Data"`
 
-# List feature classes
+**List feature classes**
 `print(list_fcs_in_folder(workspace))`
 
 ### 2. `list_fcs_in_gdb(gdb_path)`
