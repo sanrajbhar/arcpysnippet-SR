@@ -3,9 +3,6 @@
 please check Util folder that contain classes and function to re-use the code in your main script file. I upload list of functions.
 ## SR_ArcpyDefinedFunc.py - GIS Helper Functions using ArcPy
 
-
-
-## Overview
 This script provides utility functions for working with Geographic Information System (GIS) data using ArcPy. It allows users to list and process feature classes (FCs) in a workspace (folder or geodatabase), extract metadata, and update feature class attributes.
 
 ## Prerequisites
@@ -18,10 +15,23 @@ Ensure that ArcGIS Pro or ArcMap is installed with ArcPy available. The script c
 
 ## Functions
 
+Add this at start of your script
+
+`import arcpy`
+`from Utils.SR_ArcpyDefinedFunc import *`
+
 ### 1. `list_fcs_in_folder(workspace)`
 **Description:** Recursively lists all shapefiles and feature classes in a folder and its subdirectories.
 - **Parameters:** `workspace` (str) - The root folder path containing GIS data.
 - **Returns:** List of full paths to all feature classes found.
+- `import arcpy`
+`from Utils.SR_ArcpyDefinedFunc import *`
+
+**Example Usage**
+`workspace = "C:/GIS/Data"`
+
+**List feature classes**
+`print(list_fcs_in_folder(workspace))`
 
 ### 2. `list_fcs_in_gdb(gdb_path)`
 **Description:** Lists all feature classes in a Geodatabase (GDB), including those inside feature datasets.
